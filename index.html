@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+<!-- ✅ Add TensorFlow.js (version that matches face-api.js) -->
+<script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/[email protected]/dist/tf.min.js"></script>
+
+<!-- face-api.js -->
+<script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+<!-- your code -->
+<script defer src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Face Expression, Age & Gender Detection</h1>
+        <p id="status">Loading models... please wait.</p>
+        <div class="video-container">
+            <video id="video" width="640" height="480" autoplay muted></video>
+            <canvas id="overlayCanvas"></canvas>
+        </div>
+    </div>
+</body>
+</html>
